@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./assets/styles/style.css"/>
+  <title>VirtuRealm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="video-container">
+    <div  class="hamberger">
+      <span id="x">✖</span>
+      <div class="line1">
+        <h5>VIRTUGALLERY</h5>
+      </div>
+      <div class="line2">
+        <h5>VIRTUSHOP</h5>
+      </div>
+      <div class="line3">
+        <h5>SIGN IN</h5>
+      </div>
+    </div>
+  <header>
+    <div class="part1">
+      <div  class="logo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h2>Menu</h2>
+    </div>
+    <div class="part2">
+      <div class="img">
+        <img src="./image/logo223.png"/>
+      </div>
+      <h2>VirtuRealm</h2>
+    </div>
+    <div class="part3">
+      <div class="p1 p">
+        
+          <h2>VIRTUGALLERY</h2>
+        
+      </div>
+      <div class="p2 p">
+        
+
+          <h2>VIRTUSHOP</h2>
+       
+      </div>
+      <div class="p3 p">
+        <button>
+          <h2>SIGN IN</h2>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="center">
+    <div class="part1">
+      <h1>STEP INTO THE FUTURE</h1>
+    </div>
+    <div class="part2">
+      <button>
+        <h2>Learn More</h2>
+      </button>
+    </div>
+  </div>
+  <div class="video-background">
+    <video autoplay muted loop id="myVideo">
+      <source src="./video/for_arsam_s95q.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+
+
+<script src="./index.js"></script>
+
+<script>
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6615b969292cbac1346b2a93' },
+          url: 'https://general-runtime.voiceflow.com/',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>

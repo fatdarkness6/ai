@@ -1,0 +1,343 @@
+@font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn;
+    src: url('../../fonts/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Vazirmatn ;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  .video-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.2);
+  }
+  
+  .video-background {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+  }
+  .video-background video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .c-fikloo {
+    width: 600px;
+  }
+  .center {
+    z-index: 5;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .center h1 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .center .part2 button h2 {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+  
+  }
+  .center .part2 button {
+    background-color: #45a29e;
+    border: 0;
+    border-radius: 30px;
+    padding: 14px 30px;
+    cursor: pointer;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px
+  }
+  header .part1 .logo  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+    z-index: 5;
+  
+  }
+  header .part1 .logo div {
+    width: 30px;
+    border: 3px solid #55e6e0;
+    position: relative;
+    z-index: 5;
+    border-radius: 3px;
+  }
+  header .part1 {
+    
+    align-items: center;
+    gap: 10px;
+    width: 280px;
+    display: none;
+  }
+  header .part1 h2 {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    margin: 0;
+  }
+  header .part2 {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+  .part2 .img {
+    position: relative;
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+  }
+  .part2 img {
+    width: 100%;
+  }
+  .part2 h2 {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    margin: 0;
+  }
+  .part3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .part3 .p {
+    position: relative;
+    z-index: 5;
+  }
+  .part3 .p h2 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .part3 .p3 button {
+    background-color: #45a29e;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 18px;
+    border: 0;
+  }
+  .part3 .p3 button h2 {
+    margin: 0;
+    font-weight: 700;
+  }
+  .center .part1 {
+    width: 580px;
+  }
+  .hamberger {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #45a29e;
+    z-index: 6;
+    width: 220px;
+    height: 50%;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.3s;
+  }
+  .hamberger span {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px 5px 0;
+    cursor: pointer;
+  }
+  .hamberger.active {
+    left: 0;
+  }
+  .hamberger h5 {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .line1 , .line2 , .line3 {
+    display: none;
+  }
+
+
+
+
+  /* responsive */
+  @media only screen and (max-width: 1000px) {
+    .part3 .p1 {
+      display: none;
+    }
+    header .part1 {
+      width: 145px;
+  }
+  header .part1 {
+    display: flex;
+  }
+  .line1 {
+    display: block;
+  }
+
+  }
+  @media only screen and (max-width: 650px) {
+    .part3 .p2 {
+      display: none;
+    }
+    header .part1 {
+      width: 80px;
+  }
+  .center .part1 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .center .part2 button h2 {
+    font-size: 18px;
+  }
+  .line2 {
+    display: block;
+  }
+  }
+  @media only screen and (max-width: 570px) {
+    header .part1 .logo div {
+      border: 1.7px solid #55e6e0;
+  }
+  header .part1 h2 {
+    font-size: 17px;
+  }
+  .part2 h2 {
+    font-size: 20px;
+}
+header {
+  padding: 0px 10px;
+}
+.part2 .img {
+  width: 67px;
+  height: 67px;
+}
+.part3 .p h2 {
+  font-size: 14px;
+}
+  }
+  @media only screen and (max-width: 400px) {
+    .part3 .p3 {
+      display: none;
+    }
+    .line3 {
+      display: block;
+    }
+    .hamberger.active {
+      width: 100%;
+      padding: 10px;
+    }
+    header {
+      justify-content: unset;
+      gap: 80px;
+    }
+    
+  }
